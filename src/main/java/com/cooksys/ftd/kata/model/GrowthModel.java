@@ -40,6 +40,7 @@ public class GrowthModel {
 	public void setLeavesEatenToWeight(double leavesEatenToWeight) {
 		this.leavesEatenToWeight = leavesEatenToWeight;
 	}
+	
 
 	@Override
 	public String toString() {
