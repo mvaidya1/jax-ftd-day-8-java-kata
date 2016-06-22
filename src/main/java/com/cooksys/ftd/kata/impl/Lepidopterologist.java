@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import com.cooksys.ftd.kata.ILepidopterologist;
 import com.cooksys.ftd.kata.model.GrowthModel;
@@ -17,7 +18,7 @@ import com.cooksys.ftd.kata.model.Species;
 
 public class Lepidopterologist implements ILepidopterologist {
 
-	private Set<Species> sList = new HashSet<Species>();
+	private Set<Species> sList = new TreeSet<Species>();
 	private Map<Species, List<Sample>> dMap = new TreeMap<Species, List<Sample>>();
 	@Override
 	public boolean registerSpecies(Species species) {
@@ -92,7 +93,7 @@ public class Lepidopterologist implements ILepidopterologist {
 	@Override
 	public List<Species> getRegisteredSpecies() {
 		// TODO Auto-generated method stub
-		return new ArrayList<Species> (sList);
+		return new ArrayList<Species>(sList);
 	}
 
 	@Override
